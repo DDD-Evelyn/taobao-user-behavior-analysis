@@ -1,0 +1,17 @@
+# 原始数据与数据库（体积大，不入库）
+UserBehavior.csv
+UserBehavior.csv.zip
+taobao.db
+*.db-journal
+
+# SQLiteStudio 本地项目文件
+*.sqbpro
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# 系统文件
+.DS_Store
+Thumbs.db

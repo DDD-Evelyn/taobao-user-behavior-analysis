@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "启动看板 (Streamlit)",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": ["-m", "streamlit", "run", "dashboard/app.py"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "运行当前 Python 文件",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": ["${file}"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
+      "label": "重新导出 CSV",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": ["notebooks/06_导出CSV.py"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    }
+  ]
+}
